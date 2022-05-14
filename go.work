@@ -4,6 +4,7 @@ use (
 	./arrays_slices
 	./hello
 	./integers
+	./maps
 	./pointers-errors
 	./structs-methods-interfaces
 )
