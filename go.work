@@ -2,9 +2,11 @@ go 1.18
 
 use (
 	./arrays_slices
+	./di
 	./hello
 	./integers
 	./maps
+	./mocking
 	./pointers-errors
 	./structs-methods-interfaces
 )
