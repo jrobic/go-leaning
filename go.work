@@ -2,6 +2,7 @@ go 1.18
 
 use (
 	./arrays_slices
+	./concurrency
 	./di
 	./hello
 	./integers
