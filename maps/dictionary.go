@@ -1,4 +1,4 @@
-package main
+package dictionary
 
 type Dictionary map[string]string
 
