@@ -9,6 +9,7 @@ use (
 	./maps
 	./mocking
 	./pointers-errors
+	./reflection
 	./select/v0
 	./select/v1
 	./structs-methods-interfaces
