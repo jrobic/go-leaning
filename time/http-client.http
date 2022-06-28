@@ -1,0 +1,7 @@
+POST http://localhost:5001/players/John
+
+###
+
+GET http://localhost:5001/league
+
+###

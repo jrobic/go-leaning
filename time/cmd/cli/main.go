@@ -1,8 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"log"
-	"net/http"
+	"os"
 
 	poker "go-learning/time"
 )
@@ -17,9 +18,10 @@ func main() {
 	}
 	defer close()
 
-	server := poker.NewPlayerServer(store)
+	game := poker.NewTexasHoldem(poker.BlindAlerterFunc(poker.StdOutAlerter), store)
 
-	if err := http.ListenAndServe(":5001", server); err != nil {
-		log.Fatalf("could not listen on port 5001 %v", err)
-	}
+	fmt.Println("Let's play poker")
+	fmt.Println("Type {Name} wins to record a win")
+
+	poker.NewCLI(os.Stdin, os.Stdout, game).PlayPoker()
 }
